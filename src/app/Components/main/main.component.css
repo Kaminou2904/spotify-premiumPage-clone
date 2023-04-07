@@ -1,0 +1,109 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #056952;
+    color: #c5f0c9;
+    min-height: 76vh;
+    padding: 5.8rem;
+    flex-wrap: wrap;
+}
+
+.mainText{
+    width: 60%;
+}
+
+.mainTextHeading{
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.mainTextPara{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mainImg{
+    min-width: 40%;
+}
+
+.mainImg img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn{
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: 2px solid black;
+    outline: none;
+    background: transparent;
+    margin: 40px 0;
+    margin-right: 10px;
+    color: #c5f0c9;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.startedBtn{
+    background-color: black;
+    margin: 10px 0px;
+}
+
+.viewBtn{
+    border: 2px solid #c5f0c9;
+    margin: 10px 5px;
+}
+
+.mainTextExtra{
+    font-size: 11px;
+    padding-right: 150px;
+    margin-top: 20px;
+}
+
+.mainTextExtra span{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 760px) {
+
+    .main{
+        padding: 1rem;
+    }
+
+    .mainText{
+        width: 100%;
+    }
+
+    .mainTextHeading{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .mainTextPara{
+        font-size: 18px;
+    }
+
+    .mainTextExtra{
+        padding: 0px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .viewBtn{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    
+}

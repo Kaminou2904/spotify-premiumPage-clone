@@ -1,0 +1,84 @@
+.main{
+    min-height: 76vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.main h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.benifits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 10rem;
+    flex-wrap: wrap;
+}
+
+.benifit-card{
+    margin: 10px;
+    text-align: center;
+}
+
+.benifit-card h3{
+    margin: 1rem 0;
+    font-weight: 700;
+    color: black;
+}
+
+@media screen and (max-width: 760px) {
+    .main{
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+
+    .main h1{
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .benifits{
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .benifit-card{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 30px 10px;
+    }
+
+    .benifit-card img{
+        margin: 0;
+        padding: 0;
+        width: 30%;
+    }
+
+    .benifit-card div{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .benifit-card div h3, p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .benifit-card div h3{
+        margin-bottom: 20px;
+        text-align: start;
+    }
+}

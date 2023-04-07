@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5.8rem;
+    padding-right: 4rem;
+}
+
+.brand img{
+    width: 130px;
+    margin-left: 20px;
+}
+
+.myUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.myUl li{
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.myUl li:hover{
+    color: #1ed760;
+}
+
+.seprate-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.seprate-li li{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.hamIcon{
+    display: none;
+    cursor: pointer;
+}
+
+.horiLine{
+    display: none;
+}
+
+.bottImg{
+    display: none;
+}
+
+.x-btn{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    nav{
+        padding: 0.5rem;
+        padding-top: 0.7rem;
+        height: 60px;
+        align-items: flex-start;
+    }
+
+    .brand img{
+        width: 90px;
+        margin: 0;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .myUl{
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        justify-content: flex-start;
+        padding-right: 0;
+        right: -100vw;
+        transition: 0.5s;
+    }
+
+    .myUl li{
+        font-size: 24px;
+        margin: 30px 0;
+        line-height: 30px;
+        width: max-content;
+    }
+
+    .seprate-li{
+        display: block;
+        font-size: 30px;
+    }
+
+    .vertLine{
+        display: none;
+    }
+
+    .horiLine{
+        display: block;
+    }
+
+    .hamIcon{
+        display: block;
+    }
+
+    .hamIcon img{
+        height: 2rem;
+        margin-right: 7px;
+    }
+
+    .bottImg{
+        display: block;
+    }
+
+    .bottImg img{
+        width: 100px;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    .x-btn{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+}

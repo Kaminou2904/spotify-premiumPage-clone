@@ -1,0 +1,148 @@
+.container{
+    background-color: black;
+    color: white;
+    padding: 6rem;
+    padding-bottom: 4rem;
+}
+
+.vertical-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 130px;
+}
+
+.card ul{
+    list-style: none;
+}
+
+.card ul p{
+    font-size: 12px;
+    color: #919496;
+    font-weight: 900;
+}
+
+.card ul li{
+    font-size: 16px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.card ul li:hover{
+    color: #1ed760;
+}
+
+.card span{
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.social-card{
+    display: flex;
+}
+
+.social{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #222326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.social:hover{
+    color: #1ed760;
+}
+
+.legal{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #8f8f8f;
+    font-size: 13px;
+    
+}
+
+.legal p{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.legal p:hover{
+    color: #1ed760;
+}
+
+.legal p span{
+    margin-bottom: -7px;
+    margin-left: 2px;
+}
+
+.horizontal-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.usa{
+    color: #8f8f8f;
+    font-size: 12px;
+    text-align: right;
+    font-weight: 100;
+}
+
+.usa p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 970px) {
+
+    .container{
+        padding: 0;
+    }
+
+    .vertical-cards{
+        justify-content: flex-start;
+    }
+
+    .card{
+        margin: 30px;
+    }
+
+    .horizontal-card{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .legal{
+        flex-wrap: wrap;
+    }
+
+    .legal p{
+        margin: 10px;
+    }
+
+    .usa{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .vertical-cards{
+        flex-direction: column;
+    }
+}

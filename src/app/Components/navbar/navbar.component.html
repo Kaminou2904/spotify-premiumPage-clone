@@ -1,0 +1,21 @@
+<nav>
+    <div class="brand">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
+    </div>
+    <ul class="myUl" [style.right]="posi">
+        <div class="seprate-li">
+            <li>Premium</li>
+            <li>Support</li>
+            <li>Download</li>
+        </div>
+        <li class="vertLine">|</li>
+        <li class="horiLine">--</li>
+        <li>Sign up</li>
+        <li>Log in</li>
+        <li class="bottImg"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt=""></li>
+        <li (click)="xFunc()" [style.display]="dis" class="x-btn"><div>X</div></li>
+    </ul>
+    <div class="hamIcon" (click)="hamFunc()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="">
+    </div>
+</nav>
